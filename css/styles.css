@@ -1,8 +1,28 @@
 /* Main Page */
 nav {
   display: flex;
-  justify-content: center; 
+  justify-content: space-between; 
+  align-items: center;
   padding-top: 1rem;
+  width: 100%;
+}
+
+
+.nav-left {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Centered navigation */
+.nav-center {
+  display: flex;
+  justify-content: center; 
+  flex-grow: 1; 
+}
+
+/* Right-aligned Sign In */
+.nav-right {
+  margin-left: auto; 
 }
 
 ul {
@@ -10,7 +30,7 @@ ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 2rem; 
+  gap: 2rem;
   position: relative;
 }
 
@@ -48,13 +68,10 @@ a {
   white-space: nowrap; 
 }
 
-
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-
 .dropdown-menu a:hover {
   background-color: #ddd;
 }
-
