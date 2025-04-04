@@ -1,13 +1,13 @@
 /* Main Page */
 nav {
   display: flex;
-  justify-content: space-between; /* Pushes left and right sections apart */
+  justify-content: space-between; 
   align-items: center;
   padding-top: 1rem;
   width: 100%;
 }
 
-/* Left-aligned navigation */
+
 .nav-left {
   display: flex;
   gap: 2rem;
@@ -16,13 +16,13 @@ nav {
 /* Centered navigation */
 .nav-center {
   display: flex;
-  justify-content: center; /* Center the menu items */
-  flex-grow: 1; /* Takes up remaining space */
+  justify-content: center; 
+  flex-grow: 1; 
 }
 
 /* Right-aligned Sign In */
 .nav-right {
-  margin-left: auto; /* Pushes Sign In to the far right */
+  margin-left: auto; 
 }
 
 ul {
@@ -68,12 +68,10 @@ a {
   white-space: nowrap; 
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Style hover effect */
 .dropdown-menu a:hover {
   background-color: #ddd;
 }
