@@ -20,27 +20,27 @@ ul {
   border-radius: 8px; 
 }
 
-/* Right-aligned Sign In */
+
 .nav-right {
-  margin-left: auto; /* Pushes Sign In to the far right */
+  margin-left: auto; 
 }
 
 li {
   display: inline;
   position: relative;
-  margin: 0; /* Ensures no additional margin is added by list items */
+  margin: 0; 
 }
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0); /* Text color changes to white for contrast */
+  color: rgb(0, 0, 0); 
   font-size: clamp(1rem, 2vw, 1.5rem);
-  padding: 0.3rem 0.8rem; /* Reduced padding to make the box smaller */
-  display: inline-block; /* Makes the background color only cover the content, not full width */
-  border-radius: 4px; /* Rounded corners for the individual link boxes */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  margin: 0; /* Ensures there’s no space between the background and surrounding elements */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow to separate links */
+  padding: 0.3rem 0.8rem; 
+  display: inline-block; 
+  border-radius: 4px; 
+  transition: all 0.3s ease; 
+  margin: 0; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 /* Dropdown menu */
@@ -49,10 +49,10 @@ a {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: white;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 0;
   min-width: 150px;
+  background-color: white;
 }
 
 .dropdown-menu li {
@@ -64,24 +64,53 @@ a {
   white-space: nowrap;
 }
 
-/* Show dropdown on hover */
+
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Style hover effect */
+
 .dropdown-menu a:hover {
   background-color: #db721c;
 }
 
-/* Style hover effect for individual links */
+
 a:hover {
-  background-color: #c0612a; /* A darker shade for hover effect */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover for more separation */
+  background-color: #c0612a; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .banner-image {
   width: 100%;
   height: auto;
   display: block;
+}
+
+header {
+  position: relative;
+  z-index: 5; 
+}
+
+.logo-container {
+  position: absolute;
+  top: 0px; 
+  left: -80px; 
+  z-index: 10; 
+}
+
+.logo {
+  width: 120px; 
+  height: auto;
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px; 
+  left: 50px;
+  z-index: 20; 
+}
+
+.logo {
+  width: clamp(150px, 20vw, 300px); 
+  height: auto;
 }
