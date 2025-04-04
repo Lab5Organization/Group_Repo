@@ -1,50 +1,46 @@
 /* Main Page */
 nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: flex-end; 
   align-items: center;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
+  background-color: #4e534e;
 }
 
-
-.nav-left {
-  display: flex;
-  gap: 2rem;
-}
-
-/* Centered navigation */
-.nav-center {
-  display: flex;
-  justify-content: center; 
-  flex-grow: 1; 
-}
-
-/* Right-aligned Sign In */
-.nav-right {
-  margin-left: auto; 
-}
 
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   position: relative;
+  border-radius: 8px; 
+}
+
+/* Right-aligned Sign In */
+.nav-right {
+  margin-left: auto; /* Pushes Sign In to the far right */
 }
 
 li {
   display: inline;
   position: relative;
+  margin: 0; /* Ensures no additional margin is added by list items */
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0); /* Text color changes to white for contrast */
   font-size: clamp(1rem, 2vw, 1.5rem);
-  padding: 0.5rem 1rem;
-  display: block;
+  padding: 0.3rem 0.8rem; /* Reduced padding to make the box smaller */
+  display: inline-block; /* Makes the background color only cover the content, not full width */
+  border-radius: 4px; /* Rounded corners for the individual link boxes */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  margin: 0; /* Ensures there’s no space between the background and surrounding elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow to separate links */
 }
 
 /* Dropdown menu */
@@ -54,7 +50,7 @@ a {
   top: 100%;
   left: 0;
   background-color: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 0;
   min-width: 150px;
 }
@@ -65,13 +61,27 @@ a {
 
 .dropdown-menu a {
   padding: 0.5rem;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
+/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+/* Style hover effect */
 .dropdown-menu a:hover {
-  background-color: #ddd;
+  background-color: #db721c;
+}
+
+/* Style hover effect for individual links */
+a:hover {
+  background-color: #c0612a; /* A darker shade for hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover for more separation */
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
