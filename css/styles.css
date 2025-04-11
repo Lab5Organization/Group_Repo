@@ -377,11 +377,11 @@ body.road_map {
   min-height: 100vh;
 }
 
-.road-banner-image {
+/*.road-banner-image {
   width: 100%;
   height: auto;
   display: block;
-}
+}*/
 
 table {
   width: 90%;
@@ -390,7 +390,6 @@ table {
   border-spacing: 0 1rem;
   font-size: 1 rem;
   color: #3b2f1b;
-  background-color: transparent;
 }
 
 
