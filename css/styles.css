@@ -365,5 +365,49 @@ a:hover {
   }
 }
 
+/*RoadMap*/
+
+/*Background*/
+
+body.road_map {
+  background-image: url("../images/roadmapback.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/*.road-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}*/
+
+#roadmap-t1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  margin: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  font-size: 2 rem;
+  color: black;
+}
+
+th {
+  background-color: #f5e4c3;
+}
+
+td {
+  background-color: #fff5dc;
+}
+
+
 
 
