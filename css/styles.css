@@ -380,7 +380,7 @@ body.road_map {
 #roadmap-header {
   width: 80%;
   display: block;
-  height: auto;
+  height: 300px;
   margin: 2rem auto 1rem auto;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
