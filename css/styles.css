@@ -377,7 +377,13 @@ body.road_map {
   min-height: 100vh;
 }
 
+.road-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
+table {}
 
 
 
