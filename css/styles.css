@@ -383,6 +383,14 @@ body.road_map {
   display: block;
 }*/
 
+#roadmap-t1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  margin: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 table {
   width: 90%;
   margin: 2rem auto;
