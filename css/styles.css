@@ -370,10 +370,19 @@ a:hover {
 /*Background*/
 
 body.road_map {
+  background-image: url("../images/roadmapback.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+}
+
+#roadmap-header {
+  width: 80%;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 
