@@ -131,7 +131,7 @@ a:hover {
   text-decoration: none;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* optional glow */
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); 
   transition: background-color 0.3s;
 }
 
@@ -240,7 +240,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay always visible */
+  background-color: rgba(0, 0, 0, 0.6); 
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -249,7 +249,7 @@ a:hover {
   bottom: 1rem;
   left: 1rem;
   right: 1rem;
-  opacity: 1; /* Always visible */
+  opacity: 1; 
   color: #cce7ff;
   z-index: 2;
 }
