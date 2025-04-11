@@ -166,3 +166,123 @@ a:hover {
   height: auto;
 }
 
+/* Player Count */
+
+.player-count {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #cce7ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 1rem;
+  z-index: 9999;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Intro (Main Page) */
+
+.intro-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #ffffff;;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #dad1d1;
+  line-height: 1.6;
+}
+
+/* News and Updates */
+
+#news-updates {
+  padding: 3rem 1rem;
+  color: #e0e0e0;
+}
+
+.news-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+.news-item {
+  margin-bottom: 2rem;
+}
+
+.news-image {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.news-image::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.news-image:hover::before {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.news-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: #cce7ff;
+  z-index: 2;
+}
+
+.news-image:hover .news-content {
+  opacity: 1;
+}
+
+.news-content h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-content span {
+  font-size: 0.85rem;
+  color: #b0c4de;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #88c9ff;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+
+
