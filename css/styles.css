@@ -377,15 +377,13 @@ body.road_map {
   min-height: 100vh;
 }
 
-#roadmap-header {
-  width: 90%;
-  max-width: 800px;
-  height: 120px;
-  object-fit: cover;
+#roadmap-logo {
+  width: 120px;
+  height: auto;
   display: block;
-  margin: 2rem auto 1.5rem auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 1rem auto;
 }
+
+
 
 
