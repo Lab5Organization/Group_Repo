@@ -370,11 +370,12 @@ a:hover {
 /*Background*/
 
 body.road_map {
-  background-image: url("../images/roadmapback.png");
+  /*background-image: url("../images/roadmapback.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  min-height: 100vh; */
+  background-color: red;
 }
 
 
