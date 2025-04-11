@@ -277,5 +277,37 @@ a:hover {
   font-size: 0.9rem;
 }
 
+/* Footer */
+
+.site-footer {
+  background-color: #111827;
+  color: #d1d5db;
+  padding: 2rem 1rem;
+  font-size: 0.75rem; 
+  text-align: center;
+  line-height: 1.6;
+}
+
+.site-footer *,
+.site-footer a,
+.site-footer span,
+.site-footer p {
+  font-size: inherit; 
+  color: inherit;
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .footer-note {
+  margin-top: 1rem;
+}
+
+
 
 
