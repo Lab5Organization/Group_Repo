@@ -1,4 +1,13 @@
 /* Main Page */
+header {
+  position: relative;
+  z-index: 10; 
+}
+
+body {
+  background-color: #0f1115;
+}
+
 nav {
   display: flex;
   justify-content: flex-end; 
@@ -6,7 +15,9 @@ nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
-  background-color: #4e534e;
+  background-color: #121212;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -33,14 +44,14 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0); 
+  color: #f0f0f0; 
   font-size: clamp(1rem, 2vw, 1.5rem);
   padding: 0.3rem 0.8rem; 
   display: inline-block; 
   border-radius: 4px; 
   transition: all 0.3s ease; 
   margin: 0; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  height: 100%;
 }
 
 /* Dropdown menu */
@@ -52,7 +63,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
   padding: 0;
   min-width: 150px;
-  background-color: white;
+  background-color: #1a1a1a;
 }
 
 .dropdown-menu li {
@@ -71,25 +82,64 @@ a {
 
 
 .dropdown-menu a:hover {
-  background-color: #db721c;
+  background-color: #1e90ff;
 }
 
 
 a:hover {
-  background-color: #c0612a; 
+  background-color: #1e90ff; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-.banner-image {
+.dropdown-menu li {
+  display: block;
+  border-bottom: 1px solid rgb(90, 82, 82); 
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none; 
+}
+
+/* Banner Image */
+
+.banner {
+  position: relative;
+  z-index: 1; 
+}
+
+.banner img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-header {
-  position: relative;
-  z-index: 5; 
+.banner-options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.banner-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* optional glow */
+  transition: background-color 0.3s;
+}
+
+.banner-btn:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
 
 /* Logo */
 .logo-container {
@@ -107,11 +157,12 @@ header {
 .logo-container {
   position: absolute;
   top: 10px; 
-  left: 50px;
+  left: 55px;
   z-index: 20; 
 }
 
 .logo {
-  width: clamp(150px, 20vw, 300px); 
+  width: clamp(350px, 20vw, 300px); 
   height: auto;
 }
+
