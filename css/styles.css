@@ -281,7 +281,7 @@ a:hover {
 
 /* Background */
 
-body {
+body.roadmap {
   background-image: url('../images/rodamapback.png');
   background-size: cover;
   background-repeat: no-repeat;
