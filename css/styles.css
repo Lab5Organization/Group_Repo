@@ -274,18 +274,96 @@ a:hover {
   margin-top: 0.5rem;
   color: #88c9ff;
   text-decoration: underline;
-  font-size: 0.9rem;
+  font-size: 0.9rem
 }
 
-/* RoadMap */
+/* Footer */
 
-/* Background */
-
-body.roadmap {
-  background-image: url('images/roadmapback.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.site-footer {
+  background-color: #111827;
+  color: #d1d5db;
+  padding: 2rem 1rem;
+  font-size: 0.75rem; 
+  text-align: center;
+  line-height: 1.6;
 }
+
+.site-footer *,
+.site-footer a,
+.site-footer span,
+.site-footer p {
+  font-size: inherit; 
+  color: inherit;
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .footer-note {
+  margin-top: 1rem;
+}
+
+/* Media querie for smaller screens */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .news-image {
+    height: 200px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .banner-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .players-online {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Media querie for larger screens */
+
+@media (min-width: 1024px) {
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .news-item {
+    flex: 1 1 400px; 
+}
+
+  .banner-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .players-online {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}
+
 
 
