@@ -371,7 +371,7 @@ a:hover {
 
 body.road_map {
   background-image: url("../images/roadmapback.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
@@ -449,7 +449,7 @@ td {
 }
 
 .update-info {
-  display; flex;
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
