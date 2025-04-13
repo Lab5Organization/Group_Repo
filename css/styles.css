@@ -371,10 +371,12 @@ a:hover {
 
 body.road_map {
   background-image: url("../images/roadmapback.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .road-banner-image {
