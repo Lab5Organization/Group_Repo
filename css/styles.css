@@ -427,6 +427,8 @@ td {
 
 .show-on-hover {
   display: none;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .update-row:hover .show-default {
@@ -434,7 +436,7 @@ td {
 }
 
 .update-row:hover .show-on-hover {
-  display: block;
+  display: flex;
 }
 
 .update-row {
@@ -448,10 +450,5 @@ td {
   background-color: #f0e8d6;
 }
 
-.update-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
 
 
