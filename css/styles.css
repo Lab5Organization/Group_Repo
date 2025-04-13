@@ -374,6 +374,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: none;
   height: auto;
   padding: 2rem;
   border-radius: 10px;
