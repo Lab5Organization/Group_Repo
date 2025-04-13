@@ -79,6 +79,26 @@ a {
 
 /* Sign-In page css below */
 
+/* imgs styles */
+#img2 {
+  width: 50em; /* target / content = 10% / 100% = 10% */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 0;
+  left: -8%;
+  z-index: -1; /* Behind other elements */
+}
+
+#img1 {
+  width: 50em; /* target / content = 10% / 100% = 10% */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 0;
+  right: 0%;
+  z-index: -1; /* Behind other elements */
+}
+
+
 
 /* Sign In transparent form overlay */
 .translucent-form-overlay {
