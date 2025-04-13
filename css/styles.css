@@ -416,6 +416,39 @@ td {
   background-color: #fff5dc;
 }
 
+/* I looked up how to create this effect */
+.show-default {
+  display: block;
+  font-weight: bold;
+}
 
+.show-on-hover {
+  display: none;
+}
+
+.update-row:hover .show-default {
+  display: none;
+}
+
+.update-row:hover .show-on-hover {
+  display: block;
+}
+
+.update-row {
+  background-color: #fff5dc;
+  transition: background 0.3 ease;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.update-row:hover {
+  background-color: #f0e8d6;
+}
+
+.update-info {
+  display; flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
 
