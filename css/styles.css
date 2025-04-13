@@ -412,11 +412,21 @@ th, td {
 }
 
 th {
+  font-size: 1.5rem;
+  text-align: center;
   background-color: #f5e4c3;
 }
 
 td {
   background-color: #fff5dc;
+}
+
+/* row backgrounds */
+.row-sailing {
+  background-image: url("../images/sailing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* I looked up how to create this effect */
