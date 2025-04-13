@@ -115,7 +115,7 @@ a:hover {
 
 .banner {
   position: relative;
-  z-index: 1; 
+  z-index: revert-layer;
 }
 
 .banner img {
@@ -390,6 +390,8 @@ button:hover {
   justify-content: space-between; /* Space between columns */
   align-items: center; /* Center items vertically */
   margin-bottom: 1rem; /* Space between rows */
+  z-index: 1000; /* Ensure it is above other elements */
+  padding: 0.5rem; /* Inner padding for content */
 }
 
 
