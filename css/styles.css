@@ -369,20 +369,24 @@ a:hover {
 
 /*Background*/
 
-body.road_map {
+.roadmap-wrapper {
   background-image: url("../images/roadmapback.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
+  height: auto;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
-/*.road-banner-image {
+.road-banner-image {
   width: 100%;
-  height: auto;
+  height: 400px;
+  object-fit: cover;
   display: block;
-}*/
+}
 
+/* Table */
 #roadmap-t1 {
   text-align: center;
   font-size: 2.5rem;
@@ -395,19 +399,73 @@ table {
   width: 90%;
   margin: 2rem auto;
   border-collapse: separate;
-  border-spacing: 0 1rem;
-  font-size: 2 rem;
+  border-spacing: 0 2rem;
+  font-size: 1rem;
   color: black;
+  border: none;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border: none;
 }
 
 th {
+  font-size: 1.5rem;
+  text-align: center;
   background-color: #f5e4c3;
 }
 
 td {
-  background-color: #fff5dc;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
 }
 
+
+/* row backgrounds */
+.row-sailing {
+  background-image: url("../images/sailing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* I looked up how to create this effect */
+.show-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+.show-on-hover {
+  font-size: 1.2rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.update-row:hover .show-default {
+  display: none;
+}
+
+.update-row:hover .show-on-hover {
+  display: flex;
+}
+
+.update-row {
+  transition: background 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.update-row:hover {
+  background-color: #f0e8d6;
+}
 
 
 
