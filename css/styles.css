@@ -374,8 +374,6 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll;
-  transition: none;
   height: auto;
   padding: 2rem;
   border-radius: 10px;
@@ -432,7 +430,7 @@ td {
 }
 
 .show-on-hover {
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: none;
   flex-direction: column;
   gap: 0.5rem;
