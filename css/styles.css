@@ -79,7 +79,7 @@ a {
 
 /* Sign-In page css below */
 
-/* imgs styles */
+/* Sign-In page img styles */
 #img2 {
   width: 50em; /* target / content = 10% / 100% = 10% */
   height: auto; /* Maintain aspect ratio */
@@ -145,7 +145,7 @@ button:hover {
   box-shadow: 0 0 30px hsl(56, 100%, 68%);
 }
 
-/* row design */
+/*Sign-In page row design */
 .rowcolumns {
   display: flex;
   justify-content: space-between; /* Space between columns */
@@ -154,7 +154,7 @@ button:hover {
 }
 
 
-/* Button styles */
+/*Sign-In page Button styles */
 .submit-button {
   
   color: #fff;
