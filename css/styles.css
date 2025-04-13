@@ -371,10 +371,10 @@ a:hover {
 
 .roadmap-wrapper {
   background-image: url("../images/roadmapback.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1200px;
+  height: 800px;
   padding: 2rem;
   border-radius: 10px;
 }
@@ -399,7 +399,7 @@ table {
   width: 90%;
   margin: 2rem auto;
   border-collapse: separate;
-  border-spacing: 0 1rem;
+  border-spacing: 0 2rem;
   font-size: 1rem;
   color: black;
   border: none;
@@ -421,8 +421,12 @@ td {
 
 /* I looked up how to create this effect */
 .show-default {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
+  text-align: center;
 }
 
 .show-on-hover {
