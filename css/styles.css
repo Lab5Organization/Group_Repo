@@ -369,10 +369,13 @@ a:hover {
 
 /*Background*/
 
-body.road_map {
-  min-height: 100vh;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.roadmap-wrapper {
+  background-image: url("../images/roadmapback.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .road-banner-image {
@@ -392,10 +395,6 @@ body.road_map {
 }
 
 table {
-  background-image: url("../images/roadmapback.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 90%;
   margin: 2rem auto;
   border-collapse: separate;
