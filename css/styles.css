@@ -377,11 +377,11 @@ body.road_map {
   min-height: 100vh;
 }
 
-/*.road-banner-image {
+.road-banner-image {
   width: 100%;
   height: auto;
   display: block;
-}*/
+}
 
 #roadmap-t1 {
   text-align: center;
@@ -396,8 +396,14 @@ table {
   margin: 2rem auto;
   border-collapse: separate;
   border-spacing: 0 1rem;
-  font-size: 2 rem;
+  font-size: 2rem;
   color: black;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
 }
 
 th {
