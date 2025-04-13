@@ -439,7 +439,7 @@ td {
 
 .update-row {
   background-color: #fff5dc;
-  transition: background 0.3 ease;
+  transition: background 0.3s ease;
   cursor: pointer;
   padding: 1rem;
 }
