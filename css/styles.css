@@ -430,7 +430,7 @@ td {
 }
 
 .show-on-hover {
-  font-size: 1rem;
+  font-size: 1.4rem;
   display: none;
   flex-direction: column;
   gap: 0.5rem;
