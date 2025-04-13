@@ -1,4 +1,4 @@
-/* Main Page */
+/* Main Page css below */
 nav {
   display: flex;
   justify-content: space-between; 
@@ -77,8 +77,10 @@ a {
 }
 
 
-/* Sign-In page */
+/* Sign-In page css below */
 
+
+/* Sign In transparent form overlay */
 .translucent-form-overlay {
 
   width: 50%; /*target / content = 100% / 2 = 50%) */
@@ -123,13 +125,23 @@ button:hover {
   box-shadow: 0 0 30px hsl(56, 100%, 68%);
 }
 
+/* row design */
+.rowcolumns {
+  display: flex;
+  justify-content: space-between; /* Space between columns */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 1rem; /* Space between rows */
+}
+
+
+/* Button styles */
 .submit-button {
   
-    color: #fff;
-    border: none;
-    padding: 10;
-    font-size: 1.2em;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  border: none;
+  padding: 10;
+  font-size: 1.2em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
 }
