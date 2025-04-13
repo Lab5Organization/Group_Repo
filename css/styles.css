@@ -80,11 +80,18 @@ a {
 /* Sign-In page */
 
 .translucent-form-overlay {
-  max-width: 15.5em;
-  width: 100%;
-  background-color: rgba(3, 1, 25, 0.8);
-  padding: 20px;
-  color: #fefefe;
+
+  width: 50%; /*target / content = 100% / 2 = 50%) */
+  height: 30%; /* target / content = 100% / ~3.33 = 30% */
+  margin: auto; /* Center it horizontally and vertically */
+  position: absolute; /* Positioned relative to the <body> (viewport) */
+  top: 50%; /* Move to 50% of the viewport height */
+  left: 50%; /* Move to 50% of the viewport width */
+  transform: translate(-50%, -50%); 
+  background-color: rgba(3, 0, 29, 0.8); /* Semi-transparent background */
+  padding: 1rem; /* Inner padding for content */
+  border-radius: 10px; /* Rounded corners */
+ 
 }
 
 .translucent-form-overlay .columns.row {
@@ -122,7 +129,7 @@ button:hover {
     border: none;
     padding: 10;
     font-size: 1.2em;
-    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
 }
