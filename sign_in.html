@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,82 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js" async></script>
 </head>
+
 <body>
-  <header>
-    <h1>Sign In</h1>
-  </header>
-  <main>
-    <form action="/submit" method="POST">
-      <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+<!--home page nav-->
+<ul class="nav-left">
+</ul>
+<ul class="nav-center">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+        <a href="game.html">Game</a>
+        <ul class="dropdown-menu">
+            <li><a href="close.html">Download Old School</a></li>
+            <li><a href="close.html">World Select</a></li>
+            <li><a href="close.html">World Map</a></li>
+            <li><a href="close.html">Redeem Code</a></li>
+            <li><a href="close.html">News</a></li>
+            <li><a href="close.html">Status</a></li>
+            <li><a href="close.html">Jagex Launcher</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="community.html">Community</a>
+        <ul class="dropdown-menu">
+            <li><a href="close.html">Polls</a></li>
+            <li><a href="close.html">Polling Charter</a></li>
+            <li><a href="close.html">HiScores</a></li>
+            <li><a href="close.html">RoadMap</a></li>
+            <li><a href="close.html">Grand Exchange</a></li>
+            <li><a href="close.html">Discord</a></li>
+            <li><a href="close.html">Merchandise</a></li>
+            <li><a href="close.html">Wiki</a></li>
+            <li><a href="close.html">RuneLite</a></li>
+        </ul>
+    </li>
+</ul>
+<ul class="nav-right">
+    <li><a href="sign_in.html">Sign In</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- title page-->
+<h1>Sign In HERE!</h1>
+
+  <!-- sign up form-->
+  <div class="translucent-form-overlay">
+    <form class="translucent-form" action="index.html" method="post" spellcheck="true" autocomplete="on">
+      <div class="row columns">
+        <label>Username*
+          <input type="text" name="name" placeholder="USERNAME" required autocomplete="username">
+        </label>
       </div>
-      <div>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+      <div class="row columns">
+        <label>Email*
+          <input type="email" name="email" placeholder="EMAIL" required autocomplete="email">
+        </label>
+        </label>
       </div>
-      <div>
-        <label for="remember">Remember Me:</label>
-        <input type="checkbox" id="remember" name="remember">
+      <div class="row columns">
+        <label>Password*
+          <input type="text" name="password" placeholder="PASSWORD" required autocomplete="new-password">
+        </label>
       </div>
-      <button type="submit">Sign In</button>
+      <div class="row columns">
+        <label>Type Of Player:
+          <select name="status" type="text">
+            <option>Veteran</option>
+            <option value="Beginner">Beginner</option>
+          </select>
+        </label>
+      </div>
+      <div class="submit-button">
+        <button type="submit">Confirm Registration
+        </button>
+      </div>
     </form>
-  </main>
-  <footer>
-    <p>&copy; 2025 Your Company</p>
-  </footer>
+  </div>
 </body>
+
 </html>

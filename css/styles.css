@@ -78,3 +78,51 @@ a {
 
 
 /* Sign-In page */
+
+.translucent-form-overlay {
+  max-width: 15.5em;
+  width: 100%;
+  background-color: rgba(3, 1, 25, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+
+button:hover {
+  background: hsl(56, 71%, 64%);
+  box-shadow: 0 0 30px hsl(56, 100%, 68%);
+}
+
+.submit-button {
+  
+    color: #fff;
+    border: none;
+    padding: 10;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+}
