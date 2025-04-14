@@ -418,8 +418,8 @@ th {
 }
 
 td {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   
 }
 
@@ -427,6 +427,55 @@ td {
 /* row backgrounds */
 .row-sailing {
   background-image: url("../images/sailing-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-sailing-two {
+  background-image: url("../images/sailing2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-blood-moon{
+  background-image: url("../images/blood-moon-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-yama {
+  background-image: url("../images/yama.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-deadman {
+  background-image: url("../images/deadman-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-zanaris {
+  background-image: url("../images/zanaris-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-varlamore {
+  background-image: url("../images/varlamore-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-basic{
+  background-image: url("../images/basic-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
