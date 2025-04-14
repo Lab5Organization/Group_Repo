@@ -312,7 +312,7 @@ a:hover {
 }
 
 .site-footer .footer-note {
-  margin-top: 1rem;
+  margin-top: .1rem;
 }
 
 
@@ -343,15 +343,15 @@ a:hover {
 .translucent-form-overlay {
 
   width: 50%; /*target / content = 100% / 2 = 50%) */
-  height: 30%; /* target / content = 100% / ~3.33 = 30% */
-  margin: auto; /* Center it horizontally and vertically */
-  position: absolute; /* Positioned relative to the <body> (viewport) */
-  top: 50%; /* Move to 50% of the viewport height */
-  left: 50%; /* Move to 50% of the viewport width */
+  height: 30%; /* target / content = 100% / 3.33 = 30% */
+  margin: auto;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
   transform: translate(-50%, -50%); 
-  background-color: rgba(3, 0, 29, 0.8); /* Semi-transparent background */
-  padding: 1rem; /* Inner padding for content */
-  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(3, 0, 29, 0.8); 
+  padding: 1rem; /
+  border-radius: 10px; 
  
 }
 
@@ -387,22 +387,49 @@ button:hover {
 /*Sign-In page row design */
 .rowcolumns {
   display: flex;
-  justify-content: space-between; /* Space between columns */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 1rem; /* Space between rows */
-  z-index: 1000; /* Ensure it is above other elements */
-  padding: 0.5rem; /* Inner padding for content */
+  justify-content: space-between; 
+  align-items: center; 
+  margin-bottom: 1rem; 
+  padding: 0.5rem;
+  margin: 10px
+}
+
+label {
+  font-size: 1.2em;  /* 60 / 50 = 1.2em */
+  color: #fefefe;
+  margin-right: 10px; /* Space between label and input */
 }
 
 
 /*Sign-In page Button styles */
 .submit-button {
   
+  margin-left: 37em; 
+  margin-top: -9em;
   color: #fff;
   border: none;
   padding: 10;
   font-size: 1.2em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  border: none; 
+  background-color: #877b32;
+  color: #fff; 
+  font-size: 1rem; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: hsl(56, 71%, 64%);
+  box-shadow: 0 0 30px hsl(56, 100%, 68%);
 }

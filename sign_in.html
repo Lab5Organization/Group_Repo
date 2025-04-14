@@ -51,7 +51,6 @@
   </nav>
 </header>
 <div class="banner">
-  <img src="images/background.jpeg" alt="Banner Image" class="banner-image">
   <div class="banner-options">
     <a href="#" class="banner-btn left">Become a Member </a>
     <a href="#" class="banner-btn center">Try Free</a>
@@ -61,6 +60,10 @@
 <div class="player-count">
   There are currently <strong>101,730</strong> people playing!
 </div>
+
+<section class="intro-section">
+  <h1 class="intro-title"></h1>
+</section>
 
 <!--policy part-->
 <footer class="site-footer">
@@ -108,7 +111,8 @@
       </div>
       <div class="rowcolumns">
         <label>Password*
-          <input type="text" name="password" placeholder="PASSWORD" required autocomplete="new-password">
+          <input type="text" name="password" placeholder="PASSWORD" required autocomplete="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+          <span class="password-requirements">Password must be at least 8 characters long, contain at least one number, one uppercase letter, and one lowercase letter.</span>
         </label>
       </div>
       <div class="rowcolumns">
