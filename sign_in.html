@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sign_in.css">
+  <script src="js/script.js" async></script>
+</head>
+
+<body>
+
+  <!--home page nav-->
+  <header>
+    <div class="logo-container">
+      <img src="images/oldschool.png" alt="Site Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="game.html">Game</a>
+          <ul class="dropdown-menu">
+            <li><a href="close.html">Download Old School (Close)</a></li>
+            <li><a href="close.html">World Select (Close)</a></li>
+            <li><a href="close.html">World Map (Close)</a></li>
+            <li><a href="close.html">Redeem Code (Close)</a></li>
+            <li><a href="close.html">News (Close)</a></li>
+            <li><a href="close.html">Status (Close)</a></li>
+            <li><a href="close.html">Jagex Launcher (Close)</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="community.html">Community</a>
+          <ul class="dropdown-menu">
+            <li><a href="close.html">Polls (Close)</a></li>
+            <li><a href="close.html">Polling Charter (Close)</a></li>
+            <li><a href="close.html">HiScores (Close)</a></li>
+            <li><a href="road_map.html">RoadMap</a></li>
+            <li><a href="close.html">Grand Exchange (Close)</a></li>
+            <li><a href="close.html">Discord (Close)</a></li>
+            <li><a href="close.html">Merchandise (Close)</a></li>
+            <li><a href="close.html">Wiki (Close)</a></li>
+            <li><a href="close.html">RuneLite (Close)</a></li>
+          </ul>
+        </li>
+        <li><a href="sign_in.html">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <div class="banner-options">
+      <a href="#" class="banner-btn left">Become a Member </a>
+      <a href="#" class="banner-btn center">Try Free</a>
+      <a href="#" class="banner-btn right">Visit HiScores</a>
+    </div>
+  </div>
+  <div class="player-count">
+    There are currently <strong>101,730</strong> people playing!
+  </div>
+
+  <section class="intro-section">
+    <h1 class="intro-title"></h1>
+  </section>
+
+  <!--policy part-->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>
+        This website and its contents are copyright © 1999 - 2025 Jagex Games Ltd, 220 Science Park, Cambridge, CB4 0WA,
+        United Kingdom.
+      </p>
+      <p>
+        Use of this website is subject to our
+        <a href="#">Terms & Conditions</a> and
+        <a href="#">Privacy Policy</a>
+      </p>
+      <p>
+        <a href="#">Rules of Old School RuneScape</a> |
+        <a href="#">Change Cookie Settings</a> |
+        <a href="#">Do Not Sell Or Share My Personal Information</a>
+      </p>
+      <p><a href="#">RSS Feed</a></p>
+      <p class="footer-note">
+        * The external links provided in this section are collected to give you an easy way of engaging with some of the
+        most popular outposts of the OSRS community. Jagex is not responsible for the maintenance and safety of content
+        produced and hosted by third parties and any use of third-party sites is at your own risk.
+      </p>
+    </div>
+  </footer>
+
+  <!--home page nav end-->
+
+  <!--sign in page images-->
+  <img id="img1" src="images/dragonfight.jpg" alt="rusty scroll">
+  <img id="img2" src="images/Dungeon.jpg" alt="rusty scroll">
+
+
+  <!-- sign in form-->
+  <div class="translucent-form-overlay">
+    <form class="translucent-form" action="index.html" method="post" spellcheck="true" autocomplete="on">
+      <div class="rowcolumns">
+        <label>Username*
+          <input type="text" name="username" placeholder="USERNAME" required autocomplete="username">
+        </label>
+      </div>
+      <div class="rowcolumns">
+        <label>Email*
+          <input type="text" name="email" placeholder="EMAIL" required autocomplete="email">
+        </label>
+        </label>
+      </div>
+      <div class="rowcolumns">
+        <label>Password*
+          <input type="text" name="password" placeholder="PASSWORD" required autocomplete="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+          <span class="password-requirements">Password must be at least 8 characters long, contain at least one number,
+            one uppercase letter, and one lowercase letter.</span>
+        </label>
+      </div>
+      <div class="rowcolumns">
+        <label>Type Of Player:
+          <select name="status" type="text">
+            <option>Veteran</option>
+            <option value="Beginner">Beginner</option>
+          </select>
+        </label>
+      </div>
+      <div class="submit-button">
+        <button type="submit">Confirm Registration
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
