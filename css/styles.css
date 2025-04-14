@@ -453,6 +453,13 @@ td {
   background-position: center;
 }
 
+.row-deadman {
+  background-image: url("../images/deadman-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* I looked up how to create this effect */
 .show-default {
   display: flex;
