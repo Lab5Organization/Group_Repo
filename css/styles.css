@@ -467,6 +467,20 @@ td {
   background-position: center;
 }
 
+.row-varlamore {
+  background-image: url("../images/varlamore-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row-basic{
+  background-image: url("../images/basic-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* I looked up how to create this effect */
 .show-default {
   display: flex;
