@@ -460,6 +460,13 @@ td {
   background-position: center;
 }
 
+.row-zanaris {
+  background-image: url("../images/zanaris-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* I looked up how to create this effect */
 .show-default {
   display: flex;
