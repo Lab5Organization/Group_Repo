@@ -115,7 +115,7 @@ header {
   
   .banner {
     position: relative;
-    z-index: revert-layer;
+    z-index: 1; /* Fixed z-index value */
   }
   
   .banner img {
@@ -408,7 +408,7 @@ header {
     margin-top: -9em;
     color: #fff;
     border: none;
-    padding: 10;
+    padding: 10px; /* Added 'px' unit */
     font-size: 1.2em;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -433,4 +433,3 @@ header {
     background: hsl(56, 71%, 64%);
     box-shadow: 0 0 30px hsl(56, 100%, 68%);
   }
-  
