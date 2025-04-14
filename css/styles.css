@@ -350,7 +350,7 @@ a:hover {
   left: 50%; 
   transform: translate(-50%, -50%); 
   background-color: rgba(3, 0, 29, 0.8); 
-  padding: 1rem; /
+  padding: 1rem; 
   border-radius: 10px; 
  
 }
