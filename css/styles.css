@@ -466,3 +466,166 @@ td {
 .update-row:hover {
   background-color: #f0e8d6;
 }
+
+
+
+
+  /* Sign-In page css below */
+
+
+  /* Sign-In Banner Styles */
+  
+    .banner {
+      position: relative;
+      z-index: 1; /* Fixed z-index value */
+    }
+    
+
+
+  /* Sign-In Footer content */
+  
+  .policy-footer {
+    background-color: #111827;
+    color: #d1d5db;
+    padding: 2rem 1rem;
+    font-size: 0.75rem; 
+    text-align: center;
+    line-height: 1.6em;
+  }
+  
+  .policy-footer *,
+  .policy-footer a,
+  .policy-footer span,
+  .policy-footer p {
+    font-size: inherit; 
+    color: inherit;
+  }
+  
+  .policy-footer a {
+    text-decoration: none;
+  }
+  
+  .policy-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .policy-footer .policy-note {
+    margin-top: .1rem;
+  }
+
+  
+  /* Sign-In page img styles */
+  #img2 {
+    width: 50em; /* target / content = 10% / 100% = 10% */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    left: -8%;
+    z-index: -1; /* Behind other elements */
+  }
+  
+  #img1 {
+    width: 50em; /* target / content = 10% / 100% = 10% */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    right: 0%;
+    z-index: -1; /* Behind other elements */
+  }
+  
+  
+  
+  /* Sign In transparent form overlay */
+  .translucent-form-overlay {
+  
+    width: 50%; /*target / content = 100% / 2 = 50%) */
+    height: 30%; /* target / content = 100% / 3.33 = 30% */
+    margin: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(3, 0, 29, 0.8); 
+    padding: 1rem; 
+    border-radius: 10px; 
+   
+  }
+  
+  .translucent-form-overlay .columns.row {
+    display: block;
+  }
+  
+  .translucent-form-overlay h3, .translucent-form-overlay label {
+    color: #fefefe;
+  }
+  
+  .translucent-form-overlay input, .translucent-form-overlay select {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::-webkit-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  translucent-form-overlay input:-ms-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::placeholder {
+    color: #8a8a8a;
+  }
+  
+  button:hover {
+    background: hsl(56, 71%, 64%);
+    box-shadow: 0 0 30px hsl(56, 100%, 68%);
+  }
+  
+  /*Sign-In page row design */
+  .rowcolumns {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 1rem; 
+    padding: 0.5rem;
+    margin: 10px
+  }
+  
+  label {
+    font-size: 1.2em;  /* 60 / 50 = 1.2em */
+    color: #fefefe;
+    margin-right: 10px; /* Space between label and input */
+  }
+  
+  
+  /*Sign-In page Button styles */
+  .submit-button {
+    
+    margin-left: 37em; 
+    margin-top: -9em;
+    color: #fff;
+    border: none;
+    padding: 10px; /* Added 'px' unit */
+    font-size: 1.2em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border: none; 
+    background-color: #877b32;
+    color: #fff; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background: hsl(56, 71%, 64%);
+    box-shadow: 0 0 30px hsl(56, 100%, 68%);
+  }
