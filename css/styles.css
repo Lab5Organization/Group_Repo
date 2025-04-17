@@ -338,6 +338,21 @@ a:hover {
     font-size: 0.85rem;
     padding: 0.5rem;
   }
+  
+  /*Roadmap*/
+  
+  .roamap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #roadmap-t1 {
+    font-size: 3rem;
+  }
+  
+  .road-banner-image {
+    height: 500px;
+  }
 }
 
 /* Media querie for larger screens */
