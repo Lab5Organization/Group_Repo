@@ -339,7 +339,7 @@ a:hover {
     padding: 0.5rem;
   }
   
-  /*Roadmap*/
+  /*Roadmap media*/
   
   .roamap {
     flex-direction: row;
@@ -378,6 +378,20 @@ a:hover {
   .players-online {
     font-size: 1rem;
     padding: 1rem 2rem;
+  }
+  
+  /*Roadmap media*/
+  
+  .roadmap-wrapper {
+    padding: 3rem;
+  }
+  
+  .roadmap-banner-image {
+    height: 600px;
+  }
+  
+  #roadmap-t1 {
+    font-size: 3.5rem;
   }
 }
 
