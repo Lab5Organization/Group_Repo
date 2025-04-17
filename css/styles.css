@@ -402,7 +402,7 @@ a:hover {
 
 /*RoadMap*/
 
-.roadmap {
+.road_map .roadmap {
   display: flex;
   flex-direction: column;
   gap: 1rem; 
