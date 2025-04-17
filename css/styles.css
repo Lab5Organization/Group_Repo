@@ -344,6 +344,7 @@ a:hover {
   .roamap {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   
   #roadmap-t1 {
