@@ -521,46 +521,21 @@ td {
 
   /* Sign-In page css below */
 
+  .sign-in-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+    margin: 0;
+  }
 
   /* Sign-In Banner Styles */
   
     .banner {
       position: relative;
       z-index: 1; /* Fixed z-index value */
+      bottom: -30px
     }
     
-
-
-  /* Sign-In Footer content */
-  
-  .policy-footer {
-    background-color: #111827;
-    color: #d1d5db;
-    padding: 2rem 1rem;
-    font-size: 0.75rem; 
-    text-align: center;
-    line-height: 1.6em;
-  }
-  
-  .policy-footer *,
-  .policy-footer a,
-  .policy-footer span,
-  .policy-footer p {
-    font-size: inherit; 
-    color: inherit;
-  }
-  
-  .policy-footer a {
-    text-decoration: none;
-  }
-  
-  .policy-footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .policy-footer .policy-note {
-    margin-top: .1rem;
-  }
 
   
   /* Sign-In page img styles */
@@ -594,7 +569,7 @@ td {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    background-color: rgba(3, 0, 29, 0.8); 
+    background-color: #120b4bcc; 
     padding: 1rem; 
     border-radius: 10px; 
    
