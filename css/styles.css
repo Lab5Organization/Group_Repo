@@ -611,13 +611,17 @@ td {
     align-items: center; 
     margin-bottom: 1rem; 
     padding: 0.5rem;
-    margin: 10px
+    margin: 10px;
+    background-color: #7f7fb6;
+    box-shadow: #0f1115 1px 10px 1px 1px;
+    border-radius: 10%1.666666666666667em; /* 50 / 30 = 1.666666666666667 */
   }
   
   label {
+    font-style: italic;
     font-size: 1.2em;  /* 60 / 50 = 1.2em */
     color: #fefefe;
-    margin-right: 10px; /* Space between label and input */
+    margin-right: 3.6em; /* Space between label and input */
   }
   
   
