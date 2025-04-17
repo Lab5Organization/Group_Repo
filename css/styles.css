@@ -344,7 +344,12 @@ a:hover {
   .roamap {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .update-row {
+    min-height: 200px;
   }
   
   #roadmap-t1 {
