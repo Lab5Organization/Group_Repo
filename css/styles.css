@@ -654,8 +654,8 @@ a:hover {
   /*Sign-In page Button styles */
   .submit-button {
     
-    margin-left: 37em; 
-    margin-top: -9em;
+    margin-left: 37.5em; /* 50 / 1.33 = 37.46153846153846em */
+    margin-top: -10em; /* 50 / 5 = 10em */
     color: #fff;
     border: none;
     padding: 10px; /* Added 'px' unit */
@@ -665,18 +665,18 @@ a:hover {
   }
   
   button {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    border: none; 
-    background-color: #877b32;
-    color: #fff; 
-    font-size: 1rem; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 90px; /* target / content = 100% / 1.11 = 90px */
+    height: 90px; /* target / content = 100% / 1.11 = 90px */
+    border-radius: 50%; /* 50% of height */
+    display: flex; /* this is being used to center the text inside the button */
+    justify-content: center; /* this is being used to center the text inside the button */
+    align-items: center; /* this is being used to center the text inside the button */
+    border: none; /* No border */
+    background-color: #877b32; /* Background color */
+    color: #fff;  /* Text color */
+    font-size: 1rem; /* Font size */ 
+    cursor: pointer; /* Pointer cursor on hover */ 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition effect for background color and box shadow */
   }
   
   button:hover {
