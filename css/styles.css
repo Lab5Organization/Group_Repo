@@ -411,10 +411,14 @@ a:hover {
 
 .update-row {
   background-size: cover;
-background-position: center;  
-  border-radius: 8px;
-  padding: 5rem;
-  color: white; 
+  background-position: center;  
+  border-radius: 0.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center; 
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;
