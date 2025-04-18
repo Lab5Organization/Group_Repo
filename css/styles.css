@@ -349,7 +349,7 @@ a:hover {
   }
   
   .update-row {
-    min-height: 200px;
+    flex: 1 1 45%;
   }
   
   #roadmap-t1 {
@@ -387,12 +387,14 @@ a:hover {
   
   /*Roadmap media*/
   
-  .roadmap-wrapper {
-    padding: 3rem;
+  .roadmap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
   }
   
   .roadmap-banner-image {
-    height: 600px;
+    flex: 1 1 30%;
   }
   
   #roadmap-t1 {
