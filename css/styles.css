@@ -321,18 +321,7 @@ a:hover {
     right: 0;
     background-color: #121212;
   }
-
-  .dropdown-menu {
-    display: none;
-    position: static;
-    background-color: #1a1a1a;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
 }
-
   ul.active {
     display: flex;
   }
