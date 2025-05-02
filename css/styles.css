@@ -310,43 +310,23 @@ a:hover {
 
 /* Media querie for smaller screens */
 
+
 @media (max-width: 768px) {
 
-  #nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 5rem;
-    right: 0;
-    background-color: #121212;
+  nav {
+    display: block;
   }
-}
 
- .logo {
-  width: 120px; 
-  height: auto;
-}
+  .logo-container,
+  .banner-buttons {
+    display: none;
+  }
 
-
-.banner-buttons {
-  flex-direction: column; 
-  gap: 0.5rem;
-  padding: 0 1rem;
-}
-
-.banner-buttons a {
-  font-size: 0.9rem;
-  padding: 0.6rem 1rem;
-  width: 100%;
-  max-width: 200px;
-  text-align: center;
-}
+  }
 
   ul.active {
     display: flex;
   }
-
 
   .news-image {
     height: 200px;
@@ -357,23 +337,31 @@ a:hover {
     padding: 0.4rem 0.8rem;
   }
 
-   .roamap {
+  .roamap {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2rem;
   }
-  
+
   .update-row {
     flex: 1 1 45%;
     min-height: 200px;
   }
-  
+
   #roadmap-t1 {
     font-size: 3rem;
   }
-  
+
   .road-banner-image {
     height: 500px;
+  }
+
+  .banner-buttons a {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
   }
 
 /* Media querie for larger screens */
