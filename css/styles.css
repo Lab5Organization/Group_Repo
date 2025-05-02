@@ -322,6 +322,27 @@ a:hover {
     background-color: #121212;
   }
 }
+
+ .logo {
+  width: 120px; 
+  height: auto;
+}
+
+
+.banner-buttons {
+  flex-direction: column; 
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+.banner-buttons a {
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+}
+
   ul.active {
     display: flex;
   }
@@ -354,7 +375,6 @@ a:hover {
   .road-banner-image {
     height: 500px;
   }
-}
 
 /* Media querie for larger screens */
 
@@ -574,8 +594,6 @@ a:hover {
 .update-row:hover {
   background-color: #f0e8d6;
 }
-
-
 
 
   /* Sign-In page css below */
