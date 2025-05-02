@@ -310,7 +310,7 @@ a:hover {
 
 /* Media querie for smaller screens */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
   nav {
     display: block;
@@ -403,7 +403,6 @@ a:hover {
   #roadmap-t1 {
     font-size: 3.5rem;
   }
-}
 
 /*RoadMap*/
  
