@@ -309,10 +309,11 @@ a:hover {
 }
 
 /* Media querie for smaller screens */
+
 @media (max-width: 768px) {
   nav {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; 
+    justify-content: flex-end;
     align-items: center;
     padding: 0.5rem 1rem;
   }
@@ -327,30 +328,29 @@ a:hover {
   }
 
   .logo-container {
-    position: static;
+    position: absolute; 
+    top: 10px;
+    left: 20px;
     transform: none;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    z-index: 20;
   }
 
   .logo {
-    width: 150px;
+    width: 120px;
     height: auto;
   }
 
   .banner-options {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
     align-items: center;
   }
 
   .banner-btn {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
     width: 100%;
     max-width: 250px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
   }
 
   .news-image {
