@@ -310,7 +310,7 @@ a:hover {
 
 /* Media querie for smaller screens */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 
   nav {
     display: block;
@@ -350,7 +350,7 @@ a:hover {
   }
 
   input, select, button {
-    width: 100%; 
+    width: 90%; 
     padding: 1rem; 
     font-size: 1rem; 
   }
@@ -368,12 +368,10 @@ a:hover {
 /* Media querie for larger screens */
 
 @media (min-width: 1024px) {
-  .news-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+  input, select, button {
+    width: 50%; 
   }
+}
 
   .news-item {
     flex: 1 1 400px; 
