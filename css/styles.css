@@ -326,31 +326,6 @@ a:hover {
     display: flex;
   }
 
-  .logo-container {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-    z-index: 20;
-  }
-
-  .logo {
-    width: 120px;
-    height: auto;
-  }
-
-  .banner-options {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-
-  .banner-btn {
-    width: 100%;
-    max-width: 250px;
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
-  }
 
   .news-image {
     height: 200px;
