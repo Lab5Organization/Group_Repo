@@ -312,25 +312,43 @@ a:hover {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: row; 
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
   }
 
   ul {
+    display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
     background-color: #121212;
+    width: 200px;
     padding: 1rem;
     border-radius: 8px;
+    z-index: 15;
+  }
+
+  ul.active {
+    display: flex;
   }
 
   .logo-container {
-    position: absolute; 
-    top: 10px;
-    left: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
     transform: none;
     z-index: 20;
   }
