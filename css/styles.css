@@ -131,7 +131,7 @@ a:hover {
   text-decoration: none;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); 
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* optional glow */
   transition: background-color 0.3s;
 }
 
@@ -240,7 +240,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay always visible */
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -249,7 +249,7 @@ a:hover {
   bottom: 1rem;
   left: 1rem;
   right: 1rem;
-  opacity: 1; 
+  opacity: 1; /* Always visible */
   color: #cce7ff;
   z-index: 2;
 }
@@ -274,7 +274,7 @@ a:hover {
   margin-top: 0.5rem;
   color: #88c9ff;
   text-decoration: underline;
-  font-size: 0.9rem
+  font-size: 0.9rem;
 }
 
 /* Footer */
@@ -310,7 +310,7 @@ a:hover {
 
 /* Media querie for smaller screens */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -338,58 +338,6 @@ a:hover {
     font-size: 0.85rem;
     padding: 0.5rem;
   }
-  
-  /*Roadmap media*/
-  
-  .roamap {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  
-  .update-row {
-    flex: 1 1 45%;
-    min-height: 200px;
-  }
-  
-  #roadmap-t1 {
-    font-size: 3rem;
-  }
-  
-  .road-banner-image {
-    height: 500px;
-  }
-}
-/* Media querie for mobile devices */
-@media (max-width: 768px) {
-  .logo {
-    width: 80px; 
-  }
-
-  .banner-actions {
-    flex-direction: column;
-    gap: 1rem;
-    position: absolute;  
-    top: 50%;  
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 90%;  
-    padding: 1rem;
-  }
-
-  .banner-actions .container {
-    width: 100%; 
-    max-width: 300px; 
-    margin: 0 auto; 
-  }
-
-  .banner-actions .container h3 {
-    font-size: 1.2rem; 
-  }
-
-  .banner-actions .container p {
-    font-size: 0.9rem; 
-  }
 }
 
 /* Media querie for larger screens */
@@ -415,45 +363,22 @@ a:hover {
     font-size: 1rem;
     padding: 1rem 2rem;
   }
-  
-  /*Roadmap media*/
-  
-  .roadmap {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-  
-  .roadmap-banner-image {
-    flex: 1 1 30%;
-    min-height: 250px;
-  }
-  
-  #roadmap-t1 {
-    font-size: 3.5rem;
-  }
 }
 
 /*RoadMap*/
-
-.road_map .roadmap {
+ 
+.roadmap {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; 
-  padding: 1rem;
+  gap: 1rem; 
+  padding: 2rem;
 }
 
 .update-row {
-  background-size: cover;
-  background-position: center;  
-  border-radius: 0.75rem;
-  position: relative;
-  display: flex;
-  color: #ffffff;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center; 
+  background-color: #222; 
+  border-radius: 8px;
+  padding: 5rem;
+  color: white; 
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;
@@ -630,40 +555,42 @@ a:hover {
   }
 
   /* Sign-In Banner Styles */
-  
+
     .banner {
       position: relative;
       z-index: 1; /* Fixed z-index value */
       bottom: -30px
     }
-    
 
-  
+
+
   /* Sign-In page img styles */
   #img2 {
-    width: 50em; 
-    height: auto;
+    width: 50em; /* target / content = 10% / 100% = 10% */
+    height: auto; /* Maintain aspect ratio */
     position: absolute;
     top: 0;
+    left: -8%;
     left: -5em;
-    z-index: -1;
-  
+    z-index: -1; /* Behind other elements */
+  }
+
   #img1 {
-    width: 50em; 
-    height: auto; 
+    width: 50em; /* target / content = 10% / 100% = 10% */
+    height: auto; /* Maintain aspect ratio */
     position: absolute;
     top: 0;
     right: 0%;
-    z-index: -1; 
+    z-index: -1; /* Behind other elements */
   }
-  
-  
-  
+
+
+
   /* Sign In transparent form overlay */
   .translucent-form-overlay {
-  
-    width: 50%; 
-    height: 30%; 
+
+    width: 50%; /*target / content = 100% / 2 = 50%) */
+    height: 30%; /* target / content = 100% / 3.33 = 30% */
     margin: auto;
     position: absolute;
     top: 50%; 
@@ -672,38 +599,38 @@ a:hover {
     background-color: #120b4bcc; 
     padding: 1rem; 
     border-radius: 10px; 
-   
+
   }
-  
+
   .translucent-form-overlay .columns.row {
     display: block;
   }
-  
+
   .translucent-form-overlay h3, .translucent-form-overlay label {
     color: #fefefe;
   }
-  
+
   .translucent-form-overlay input, .translucent-form-overlay select {
     color: #8a8a8a;
   }
-  
+
   .translucent-form-overlay input::-webkit-input-placeholder {
     color: #8a8a8a;
   }
-  
+
   translucent-form-overlay input:-ms-input-placeholder {
     color: #8a8a8a;
   }
-  
+
   .translucent-form-overlay input::placeholder {
     color: #8a8a8a;
   }
-  
+
   button:hover {
     background: hsl(56, 71%, 64%);
     box-shadow: 0 0 30px hsl(56, 100%, 68%);
   }
-  
+
   /*Sign-In page row design */
   .rowcolumns {
     display: flex;
@@ -714,47 +641,46 @@ a:hover {
     margin: 10px;
     background-color: #7f7fb6;
     box-shadow: #0f1115 1px 10px 1px 1px;
-    border-radius: 10%1.666666666666667em;
+    border-radius: 10%1.666666666666667em; /* 50 / 30 = 1.666666666666667 */
   }
-  
+
   label {
     font-style: italic;
-    font-size: 1.2em;  
+    font-size: 1.2em;  /* 60 / 50 = 1.2em */
     color: #fefefe;
-    margin-right: 3.6em; 
-  
-  
+    margin-right: 3.6em; /* Space between label and input */
+  }
+
+
   /*Sign-In page Button styles */
   .submit-button {
-    
-    margin-left: 37.5em; 
-    margin-top: -10em; 
+
+    margin-left: 37.5em; /* 50 / 1.33 = 37.46153846153846em */
+    margin-top: -10em; /* 50 / 5 = 10em */
     color: #fff;
     border: none;
-    padding: 10px; 
+    padding: 10px; /* Added 'px' unit */
     font-size: 1.2em;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   button {
-    width: 90px; 
-    height: 90px;
-    border-radius: 50%; 
-    display: flex; 
-    justify-content: center; 
-    border: none; 
-    background-color: #877b32; 
-    color: #fff;  
-    font-size: 1rem; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    width: 90px; /* target / content = 100% / 1.11 = 90px */
+    height: 90px; /* target / content = 100% / 1.11 = 90px */
+    border-radius: 50%; /* 50% of height */
+    display: flex; /* this is being used to center the text inside the button */
+    justify-content: center; /* this is being used to center the text inside the button */
+    align-items: center; /* this is being used to center the text inside the button */
+    border: none; /* No border */
+    background-color: #877b32; /* Background color */
+    color: #fff;  /* Text color */
+    font-size: 1rem; /* Font size */ 
+    cursor: pointer; /* Pointer cursor on hover */ 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition effect for background color and box shadow */
   }
-  
+
   button:hover {
     background: hsl(56, 71%, 64%);
     box-shadow: 0 0 30px hsl(56, 100%, 68%);
   }
-
-  }
-}
