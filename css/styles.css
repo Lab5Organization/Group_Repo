@@ -361,6 +361,25 @@ a:hover {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
+  
+   .roamap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .update-row {
+    flex: 1 1 45%;
+    min-height: 200px;
+  }
+  
+  #roadmap-t1 {
+    font-size: 3rem;
+  }
+  
+  .road-banner-image {
+    height: 500px;
+  }
 }
 
 /* Media querie for larger screens */
@@ -385,6 +404,23 @@ a:hover {
   .players-online {
     font-size: 1rem;
     padding: 1rem 2rem;
+  }
+  
+  /*Roadmap media*/
+  
+  .roadmap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  
+  .roadmap-banner-image {
+    flex: 1 1 30%;
+    min-height: 250px;
+  }
+  
+  #roadmap-t1 {
+    font-size: 3.5rem;
   }
 }
 
