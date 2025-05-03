@@ -695,8 +695,8 @@ a:hover {
   /*Sign-In page Button styles */
   .submit-button {
 
-    margin-left: 37.5em; /* 50 / 1.33 = 37.46153846153846em */
-    margin-top: -10em; /* 50 / 5 = 10em */
+    margin-left: 40%; /* 50 / 1.33 = 37.46153846153846em */
+    margin-top: -2%; /* 50 / 5 = 10em */
     color: #fff;
     border: none;
     padding: 10px; /* Added 'px' unit */
