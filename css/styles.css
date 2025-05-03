@@ -625,18 +625,16 @@ a:hover {
 
   /* Sign In transparent form overlay */
   .translucent-form-overlay {
-
-    width: 50%; /*target / content = 100% / 2 = 50%) */
-    height: 30%; /* target / content = 100% / 3.33 = 30% */
+    max-width: 100%; 
+    max-height: 30%; 
     margin: auto;
     position: absolute;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    background-color: #120b4bcc; 
+    background-color: rgba(1, 13, 72, 0.1); 
     padding: 1rem; 
     border-radius: 10px; 
-
   }
 
   .translucent-form-overlay .columns.row {
@@ -648,7 +646,7 @@ a:hover {
   }
 
   .translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
+    color: #000000;
   }
 
   .translucent-form-overlay input::-webkit-input-placeholder {
