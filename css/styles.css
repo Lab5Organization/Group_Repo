@@ -608,6 +608,14 @@ a:hover {
 
 
   /* Sign-In page img styles */
+  #img3{
+    display: none;
+  }
+  #img3 active {
+    width: 425px;
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+  }
   #img2 {
     width: 50em; /* target / content = 10% / 100% = 10% */
     height: auto; /* Maintain aspect ratio */
