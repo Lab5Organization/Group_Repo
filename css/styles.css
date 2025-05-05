@@ -311,6 +311,7 @@ a:hover {
 /* Media querie for smaller screens */
 
 
+
 @media (max-width: 768px) {
 
   nav {
@@ -611,7 +612,9 @@ a:hover {
   #img3{
     display: none;
   }
-  #img3 active {
+
+  #img3 
+  .active {
     width: 425px;
     height: auto; /* Maintain aspect ratio */
     position: absolute;
